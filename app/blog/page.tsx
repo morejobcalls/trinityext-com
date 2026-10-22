@@ -1,21 +1,16 @@
-// The /blog branch index - baked into the template. A real index shape
-// (pyramid rule 7): kicker + H1 naming the branch, intro, one entry per post.
-// Never an <article>, never a post wearing the index URL.
+// The /blog branch index (pyramid rule 7): kicker + H1 naming the branch, intro,
+// one entry per post. Never an <article>, never a post wearing the index URL.
 //
 // /blog-post appends one entry per published post: title as a descriptive
 // link, one-sentence hook, date. Posts live FLAT at /blog/[slug].
-import type { CSSProperties } from "react";
+// Redesign port 22 October 2026: cards use components/site + app/brand.css.
+import { Site, Section, CtaBand } from "@/components/site";
 
 export const metadata = {
   title: { absolute: "Roofing and Deck Advice for Upstate Homeowners | Trinity Exteriors" },
   description: "Roof costs, storm damage insurance claims, flat roofs and deck prices, explained by the Trinity Exteriors team in Greenville, SC.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog/" },
 };
-
-const wrap: CSSProperties = { maxWidth: "var(--container, 1160px)", margin: "0 auto", padding: "0 var(--gutter, 24px)" };
-const eyebrow: CSSProperties = { font: "var(--type-label)", letterSpacing: "var(--track-label)", textTransform: "uppercase", color: "var(--text-muted)" };
-const h1s: CSSProperties = { font: "var(--type-display)", letterSpacing: "var(--track-display)", color: "var(--text-strong)", margin: "var(--space-4) 0 0" };
-const body: CSSProperties = { font: "var(--type-body-lg)", color: "var(--text-body)", margin: "var(--space-3) 0 0", maxWidth: "52ch" };
 
 // /blog-post adds entries here, newest first: { slug, title, hook, date }
 const POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
@@ -25,51 +20,44 @@ const POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: st
   { slug: "deck-cost-per-square-foot", title: "Deck cost per square foot", hook: "A 16x16 deck priced out, wood against composite over ten years, and what three Upstate homeowners paid.", date: "22 October 2026" },
 ];
 
+// Card photo per post: the post's own hero image.
+const IMAGES: Record<string, { src: string; alt: string }> = {
+  "how-much-does-a-new-roof-cost": { src: "/images/roof-replacement-blue-gray-shingles-brick-two-story-aerial.webp", alt: "New blue-gray architectural shingle roof on a brick two-story home in the Upstate, seen from a drone" },
+  "hail-damage-roof-insurance-claim": { src: "/images/inspection-chalk-circle-on-shingle.webp", alt: "A damage point circled in chalk on a shingle during a roof inspection" },
+  "flat-roof-replacement-cost": { src: "/images/stock/flat-roof-modified-bitumen-rolls-weathered-seams.webp", alt: "Weathered modified bitumen flat roof with overlapping seams running across it" },
+  "deck-cost-per-square-foot": { src: "/images/deck-cost-hero-raised-wood-deck-aluminum-cover.webp", alt: "Raised pressure-treated wood deck with black balusters and a dark aluminum roof cover on the back of a two-story home" },
+};
+
 export default function BlogIndex() {
   return (
-    <><div className="sc-host" data-sc-name="Local Service Site Template"><div style={{background: "var(--surface-card)", color: "var(--text-body)"}}> <header style={{position: "sticky", top: "0px", zIndex: "30"}}> <div className="sc-host-x" style={{display: "contents"}}><div style={{display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", flexWrap: "wrap", padding: "10px var(--gutter)", background: "var(--surface-accent)", color: "var(--text-on-accent)", font: "var(--weight-bold) var(--size-body-sm)/1.3 var(--font-core)", textAlign: "center"}}><span>Hail or wind damage? Free roof inspection, with help on the insurance claim.</span><a href="/quote" style={{display: "inline-flex", alignItems: "center", gap: "5px", color: "var(--text-on-accent)", textDecorationThickness: "2px", textUnderlineOffset: "3px"}}>Book my inspection<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" role="presentation" aria-hidden="true" style={{display: "block", flex: "0 0 auto"}}><path d="M5 12h14"></path> <path d="m12 5 7 7-7 7"></path></svg></a></div></div> <div style={{background: "var(--surface-card)", borderBottom: "var(--border-hairline) solid var(--line-hairline)"}}> <div className="gw-container" style={{display: "flex", alignItems: "center", gap: "var(--space-5)", height: "74px"}}> <a href="/" aria-label="Trinity Exteriors home" style={{display: "block", flex: "0 0 auto", lineHeight: 0}}><img src="/logo.webp" alt="Trinity Exteriors" width="150" height="48" style={{height: "48px", width: "auto"}} /></a> <nav style={{display: "flex", gap: "var(--space-5)", marginLeft: "var(--space-4)", flex: "0 0 auto"}}> <a style={{textDecoration: "none", borderWidth: "0px 0px 2px", borderStyle: "none none solid", borderColor: "currentcolor currentcolor transparent", borderImage: "initial", background: "transparent", cursor: "pointer", padding: "0px 0px 4px", font: "var(--weight-semibold) var(--size-body-sm)/1 var(--font-core)", color: "var(--text-body)"}} href="/"><span className="sc-interp">Home</span></a> <a style={{textDecoration: "none", borderWidth: "0px 0px 2px", borderStyle: "none none solid", borderColor: "currentcolor currentcolor transparent", borderImage: "initial", background: "transparent", cursor: "pointer", padding: "0px 0px 4px", font: "var(--weight-semibold) var(--size-body-sm)/1 var(--font-core)", color: "var(--text-body)"}} href="/services"><span className="sc-interp">Services</span></a> <a style={{textDecoration: "none", borderWidth: "0px 0px 2px", borderStyle: "none none solid", borderColor: "currentcolor currentcolor transparent", borderImage: "initial", background: "transparent", cursor: "pointer", padding: "0px 0px 4px", font: "var(--weight-semibold) var(--size-body-sm)/1 var(--font-core)", color: "var(--text-body)"}} href="/about"><span className="sc-interp">About</span></a> <a style={{textDecoration: "none", borderWidth: "0px 0px 2px", borderStyle: "none none solid", borderColor: "currentcolor currentcolor transparent", borderImage: "initial", background: "transparent", cursor: "pointer", padding: "0px 0px 4px", font: "var(--weight-semibold) var(--size-body-sm)/1 var(--font-core)", color: "var(--text-body)"}} href="/blog"><span className="sc-interp">Blog</span></a> <a style={{textDecoration: "none", borderWidth: "0px 0px 2px", borderStyle: "none none solid", borderColor: "currentcolor currentcolor transparent", borderImage: "initial", background: "transparent", cursor: "pointer", padding: "0px 0px 4px", font: "var(--weight-semibold) var(--size-body-sm)/1 var(--font-core)", color: "var(--text-body)"}} href="/contact"><span className="sc-interp">Contact</span></a> </nav> <div style={{display: "flex", alignItems: "center", gap: "var(--space-4)", marginLeft: "auto", flex: "0 0 auto"}}>  <a href="tel:+18648447777" style={{fontSize: "18px", color: "var(--text-strong)", textDecoration: "none", whiteSpace: "nowrap"}}>(864) 844-7777</a> <div className="sc-host-x" style={{display: "contents"}}><a type="button" style={{display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", font: "var(--type-button)", letterSpacing: "0.005em", borderRadius: "var(--radius-control)", borderColor: "var(--accent-900)", cursor: "pointer", textDecoration: "none", transition: "var(--transition-control), transform var(--dur-instant) var(--ease-standard)", whiteSpace: "nowrap", minHeight: "var(--control-h)", padding: "var(--pad-control)", background: "var(--surface-accent)", color: "var(--text-on-accent)"}} href="/contact"><span className="sc-interp">Book my inspection</span></a></div> </div> </div> </div> </header> <main style={{ background: "var(--surface-page, #f9f8f6)", minHeight: "70vh" }}>
-      <section style={{ padding: "var(--space-9, 88px) 0 var(--space-7, 48px)" }}>
-        <div style={wrap}>
-          <p style={eyebrow}>The blog</p>
-          <h1 style={h1s}>Roofing and deck advice for Upstate homeowners</h1>
-          <p style={body}>
-            Straight answers on roof costs, storm damage claims and decks, from the crew that does the work
-            across Greenville and the Upstate.
-          </p>
+    <Site>
+      <section className="t-pagehero" style={{ paddingBottom: 0 }}>
+        <div className="t-wrap">
+          <nav className="t-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Advice</nav>
+          <span className="t-eyebrow">Advice</span>
+          <h1 style={{ fontSize: "clamp(38px, 4.8vw, 62px)", margin: "16px 0 22px", maxWidth: 820 }}>Roofing and deck advice for Upstate homeowners</h1>
+          <p className="t-lead">Straight answers on roof costs, storm damage claims and decks, from the crew that does the work across Greenville and the Upstate.</p>
         </div>
       </section>
-
-      <section style={{ padding: "0 0 var(--space-9, 88px)" }}>
-        <div style={wrap}>
-          {POSTS.length === 0 ? (
-            <div
-              style={{
-                border: "1px dashed var(--line-strong, #c5c4bf)",
-                borderRadius: "var(--radius-card, 14px)",
-                padding: "var(--space-7, 48px)",
-                textAlign: "center",
-                color: "var(--text-muted, #73726e)",
-                font: "var(--type-body)",
-              }}
-            >
-              No posts yet. The first one comes from <code>/blog-post</code> - written to your
-              keyword map, in the site&rsquo;s design, registered here automatically.
-            </div>
-          ) : (
-            <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "var(--space-5, 24px)" }}>
-              {POSTS.map((post) => (
-                <li key={post.slug} style={{ borderBottom: "1px solid var(--line-hairline, #e3e2de)", paddingBottom: "var(--space-5, 24px)" }}>
-                  <p style={{ ...eyebrow, marginBottom: 6 }}>{post.date}</p>
-                  <a href={`/blog/${post.slug}`} style={{ font: "var(--type-h2)", color: "var(--text-strong)", textDecoration: "none" }}>
-                    {post.title}
-                  </a>
-                  <p style={{ ...body, marginTop: 8 }}>{post.hook}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </section>
-    </main> <footer style={{background: "var(--accent-900)", color: "var(--ink-200)"}}> <div className="gw-container" style={{display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr 1fr", gap: "var(--space-9)", padding: "var(--space-10) var(--gutter)"}}> <div style={{display: "grid", gap: "var(--space-4)", alignContent: "start"}}> <strong style={{font: "var(--weight-black) 22px/1 var(--font-core)", letterSpacing: "-0.03em", color: "var(--white)"}}>Trinity Exteriors</strong> <p style={{font: "var(--type-body-sm)", margin: "0px", maxWidth: "36ch"}}>Roofing, gutters, siding and decks across Greenville and the Upstate. Free roof inspections, honest answers and help with insurance claims.</p> <div style={{display: "flex", gap: "var(--space-3)", marginTop: "2px"}}> <div className="sc-host-x" style={{display: "contents"}}><span style={{display: "inline-flex", alignItems: "center", gap: "6px", padding: "4px 10px", borderRadius: "var(--radius-badge)", font: "var(--type-label)", letterSpacing: "0.04em", textTransform: "uppercase", whiteSpace: "nowrap", background: "var(--surface-accent-soft)", color: "var(--text-accent)"}}>Greenville, SC</span></div> <div className="sc-host-x" style={{display: "contents"}}><span style={{display: "inline-flex", alignItems: "center", gap: "6px", padding: "4px 10px", borderRadius: "var(--radius-badge)", font: "var(--type-label)", letterSpacing: "0.04em", textTransform: "uppercase", whiteSpace: "nowrap", background: "var(--ink-100)", color: "var(--text-body)"}}>5.0 on Google</span></div> </div> </div> <div style={{display: "grid", gap: "9px", alignContent: "start"}}> <span className="gw-label" style={{color: "var(--ink-400)"}}>Services</span> <button style={{border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}}><span className="sc-interp">Roofing</span></button> <button style={{border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}}><span className="sc-interp">Commercial roofing</span></button> <button style={{border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}}><span className="sc-interp">Storm damage roofing</span></button> <button style={{border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}}><span className="sc-interp">Deck builder</span></button> </div> <div style={{display: "grid", gap: "9px", alignContent: "start"}}> <span className="gw-label" style={{color: "var(--ink-400)"}}>Company</span> <a style={{textDecoration: "none", border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}} href="/about"><span className="sc-interp">About us</span></a> <a style={{textDecoration: "none", border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}} href="/blog"><span className="sc-interp">Blog</span></a> <a style={{textDecoration: "none", border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}} href="/contact"><span className="sc-interp">Contact</span></a> <a style={{textDecoration: "none", border: "0px", background: "transparent", padding: "0px", textAlign: "left", cursor: "pointer", font: "var(--type-body-sm)", color: "var(--ink-200)"}} href="/contact"><span className="sc-interp">Book a visit</span></a> </div> <div style={{display: "grid", gap: "10px", alignContent: "start"}}> <span className="gw-label" style={{color: "var(--ink-400)"}}>Contact</span> <a href="tel:+18648447777" style={{color: "var(--white)", fontSize: "19px", textDecoration: "none"}}>(864) 844-7777</a> <a href="/contact" style={{color: "var(--blue-300)", font: "var(--type-body-sm)"}}>Send us a message</a> <span style={{font: "var(--type-body-sm)"}}>1801 Rutherford Rd Suite 109A, Greenville, SC 29609</span> <div className="sc-host-x" style={{display: "contents"}}><table style={{width: "100%", borderCollapse: "collapse", font: "var(--type-body-sm)", color: "inherit"}}><tbody><tr style={{borderBottom: "var(--border-hairline) solid rgba(255,255,255,.18)", background: "rgba(255, 255, 255, 0.1)"}}><th scope="row" style={{textAlign: "left", padding: "9px 10px", font: "var(--weight-semibold) var(--size-body-sm)/1.4 var(--font-core)", color: "var(--white)"}}>Mon–Fri</th><td style={{textAlign: "right", padding: "9px 10px", color: "inherit"}}>8am–6pm</td></tr><tr style={{borderBottom: "var(--border-hairline) solid rgba(255,255,255,.18)", background: "transparent"}}><th scope="row" style={{textAlign: "left", padding: "9px 10px", font: "var(--type-body-sm)", color: "var(--white)"}}>Saturday</th><td style={{textAlign: "right", padding: "9px 10px", color: "inherit"}}>Closed</td></tr><tr style={{borderBottom: "var(--border-hairline) solid rgba(255,255,255,.18)", background: "transparent"}}><th scope="row" style={{textAlign: "left", padding: "9px 10px", font: "var(--type-body-sm)", color: "var(--white)"}}>Sunday</th><td style={{textAlign: "right", padding: "9px 10px", color: "inherit"}}>Closed</td></tr></tbody></table></div> </div> </div> <div className="gw-container" style={{display: "flex", gap: "var(--space-6)", padding: "var(--space-5) var(--gutter)", borderTop: "1px solid rgba(255, 255, 255, 0.14)", font: "var(--type-caption)", color: "var(--ink-400)"}}> <span>© 2026 Trinity Exteriors</span> <button style={{border: "0px", background: "transparent", padding: "0px", cursor: "pointer", font: "var(--type-caption)", color: "var(--ink-400)"}}>Privacy</button> <button style={{border: "0px", background: "transparent", padding: "0px", cursor: "pointer", font: "var(--type-caption)", color: "var(--ink-400)"}}>Terms</button> </div> </footer></div></div></>
+      <Section tight>
+        {POSTS.length === 0 ? (
+          <p>New articles are on the way.</p>
+        ) : (
+          <div className="t-posts">
+            {POSTS.map((post) => (
+              <a className="t-post" key={post.slug} href={`/blog/${post.slug}/`}>
+                {IMAGES[post.slug] && <div className="t-post-img"><img src={IMAGES[post.slug].src} alt={IMAGES[post.slug].alt} loading="lazy" /></div>}
+                <div className="t-post-body">
+                  <span className="t-eyebrow">Advice · {post.date}</span>
+                  <h3>{post.title}</h3>
+                  <p>{post.hook}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
+      </Section>
+      <CtaBand />
+    </Site>
   );
 }

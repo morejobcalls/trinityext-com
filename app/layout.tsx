@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./brand.css";
+import { Fraunces, Instrument_Sans } from "next/font/google";
 import { site } from "@/lib/site.config";
 import LeadFormHandler from "@/lib/LeadFormHandler";
 import { readFileSync } from "node:fs";
@@ -16,6 +18,11 @@ const fontCss = readFileSync(join(process.cwd(), "app", "fonts.css"), "utf8");
 // footer, so anything added here renders ON TOP of theirs and shows up as a
 // stray bar above the promo strip.
 
+// Redesign type (22 October 2026): Fraunces headlines, Instrument Sans body.
+// next/font self-hosts them at build time, so nothing loads from Google at runtime.
+const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"], variable: "--font-fraunces", display: "swap" });
+const instrument = Instrument_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-instrument", display: "swap" });
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -27,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fraunces.variable} ${instrument.variable}`}>
       <head>
         {/* Archivo is what --font-core asks for. Without it every heading falls
             back to Helvetica and the display sizes stop reading as display. */}

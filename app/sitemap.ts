@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/roofing", "/services/commercial-roofing", "/services/storm-damage-roofing",
     "/services/emergency-roof-repair", "/services/roof-inspection", "/services/fascia-and-soffit-repair",
     "/services/seamless-gutters", "/services/siding-installation", "/services/deck-builder",
-    "/services/aluminum-patio-covers",
+    "/services/aluminum-patio-covers", "/services/interior-remodeling",
     "/blog/how-much-does-a-new-roof-cost", "/blog/hail-damage-roof-insurance-claim",
     "/blog/flat-roof-replacement-cost", "/blog/deck-cost-per-square-foot",
   ];

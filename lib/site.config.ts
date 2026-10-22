@@ -3,7 +3,7 @@
 
 export const site = {
   name: "Trinity Exteriors",
-  tagline: "Roofing, gutters, siding and decks across Greenville and the Upstate of South Carolina.",
+  tagline: "One local contractor for the whole house: roofs, decks, siding, gutters, flooring and remodels across Greenville and the Upstate.",
   // GHL inbound webhook - /build-website step 6 collects this and writes it here.
   leadWebhook: "https://services.leadconnectorhq.com/hooks/17XoWAmVPB3YLikXeCdA/webhook-trigger/rIwQHgn0c6hm95vtM5gR" as string | null, // GHL wf "Website Lead | trinityext.com" (e2ca91f8), set 2026-10-20
   // GHL calendar booking link - collected on the first /service-page run.
@@ -25,6 +25,7 @@ export const site = {
     { name: "Commercial Roofing", slug: "commercial-roofing", blurb: "TPO and flat roof repair, replacement and inspections for businesses." },
     { name: "Storm Damage Roofing", slug: "storm-damage-roofing", blurb: "Hail and wind damage inspected, documented and worked through your insurance claim." },
     { name: "Deck Builder", slug: "deck-builder", blurb: "Custom wood and composite decks, designed and built start to finish." },
+    { name: "Interior & Remodeling", slug: "interior-remodeling", blurb: "Flooring, remodels, painting and repairs after water damage." },
   ],
 
   // Google Ads sitelinks. Written here at build time, while the value of each
