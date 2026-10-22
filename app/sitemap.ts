@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/flat-roof-replacement-cost", "/blog/deck-cost-per-square-foot",
   ];
   return pages.map((path) => ({
-    url: `${site.url}${path}`,
+    url: `${site.url}${path}/`,
     lastModified: new Date(),
     priority: path === "" ? 1 : 0.8,
   }));

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { site } from "@/lib/site.config";
+import LeadFormHandler from "@/lib/LeadFormHandler";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -35,7 +36,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <style dangerouslySetInnerHTML={{ __html: ds }} />
         <style dangerouslySetInnerHTML={{ __html: fontCss }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <LeadFormHandler />
+      </body>
     </html>
   );
 }
