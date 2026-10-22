@@ -1,0 +1,429 @@
+{
+  "redirects": [
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-restoration",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/services/residential-roofing",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/services/gutter-installation-repair",
+      "destination": "/services/seamless-gutters",
+      "permanent": true
+    },
+    {
+      "source": "/services/replacement",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-repair-leak-fixes",
+      "destination": "/services/emergency-roof-repair",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-inspection-maintenance",
+      "destination": "/services/roof-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/services/new-roof-installation",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/services/siding-repair-replacement",
+      "destination": "/services/siding-installation",
+      "permanent": true
+    },
+    {
+      "source": "/services/exterior-siding-installation",
+      "destination": "/services/siding-installation",
+      "permanent": true
+    },
+    {
+      "source": "/services/trim-fascia-soffit-installation",
+      "destination": "/services/fascia-and-soffit-repair",
+      "permanent": true
+    },
+    {
+      "source": "/services/interior-painting",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/exterior-painting",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/spartanburg-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/mauldin-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/simpsonville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/clemson-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/boiling-springs-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/anderson-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/greenwood-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/greer-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/walhalla-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/berea-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/travelers-rest-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/union-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/pickens-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/laurens-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/woodruff-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/fountain-inn-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/liberty-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/roebuck-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/central-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/landrum-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/easley-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/duncan-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/pacolet-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/taylors-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/inman-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/west-union-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/seneca-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/gaffney-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/cowpens-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/stop-hidden-water-damage-with-expert-inspection-and-repair",
+      "destination": "/services/roof-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/projects/is-your-roof-hiding-damage-heres-why-inspections-matter",
+      "destination": "/services/roof-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/projects/expert-roof-installation-for-enhanced-home-protection",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-roof-installation-with-owens-corning-onyx-black-shingles",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/reliable-roofing-solutions-you-can-trust",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/protect-your-home-from-hidden-roof-damage",
+      "destination": "/services/roof-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-roof-solutions-for-neighboring-homes",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/comprehensive-roofing-upgrade-that-exceeds-state-code",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-neighboring-roofs-in-simpsonville",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/durable-roofing-solution-in-greenville",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/full-roof-replacement-done-right-in-greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-duration-brownwood-shingles-that-actually-match-your-home",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/roof-installation-excellence-in-greenville-county",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/your-roofs-trusted-partner",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/quality-new-roof-installation-by-trinity-restoration",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/simpsonville-roofing-alert",
+      "destination": "/services/roof-inspection",
+      "permanent": true
+    },
+    {
+      "source": "/projects/rotted-eave-decking-fixed-before-a-full-roof-replacement",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/certainteed-landmark-pro-roof-installation-in-greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/elevate-your-home-with-our-stellar-roofing-services",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/high-quality-roof-replacement-with-premium-shingles",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-onyx-black-roof-installation-in-easley-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/fresh-oc-oakridge-onyx-roof-upgrade",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/precision-and-dedication-you-can-trust",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-brownwood-shingle-roof-installation-in-simpsonville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-estate-gray-roof-installation-in-greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/why-ice-barrier-makes-all-the-difference-on-a-new-roof",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/trex-saddle-enhance-deck-build-in-anderson-sc",
+      "destination": "/services/deck-builder",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-deck-build-in-the-mauldinsimpsonville-area",
+      "destination": "/services/deck-builder",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-owens-corning-duration-roof-installed-in-greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-owens-corning-roof-and-backyard-upgrade-in-travelers-rest",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-onyx-black-roof-and-gutter-install-in-lyman-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-duration-brownwood-roof-installation-in-greenville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/old-deck-replaced-with-trex-decking-and-covered-aluminum-roof",
+      "destination": "/services/deck-builder",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-duration-desert-rose-roof-replacement-in-simpsonville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/storm-damage-to-new-owens-corning-roof-in-fountain-inn",
+      "destination": "/services/storm-damage-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/full-roof-replacement-with-decking-repair-in-piedmont-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/owens-corning-duration-driftwood-roof-installation-in-simpsonville-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/new-roof-installation-in-simpsonville-showcases-oc-williamsburg-gray",
+      "destination": "/services/roofing",
+      "permanent": true
+    },
+    {
+      "source": "/projects/full-roof-replacement-done-right-in-taylors-sc",
+      "destination": "/services/roofing",
+      "permanent": true
+    }
+  ]
+}

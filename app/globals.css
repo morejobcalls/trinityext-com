@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+/* Phone and small-tablet layer. The ported template sets every layout inline
+   with fixed multi-column grids and no breakpoints, so below 820px it squeezes
+   instead of stacking. These rules stack it; they change no colours or type. */
+@media (max-width: 820px) {
+  .gw-container { padding-left: 16px !important; padding-right: 16px !important; }
+  [style*="grid-template-columns"] { grid-template-columns: minmax(0, 1fr) !important; }
+  [style*="grid-template-columns:repeat(4"], [style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  [style*="grid-column"] { grid-column: auto !important; }
+  [style*="grid-row"] { grid-row: auto !important; }
+  [style*="height:74px"] { height: auto !important; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; row-gap: 8px !important; }
+  header nav { display: none !important; }
+  header [style*="margin-left:auto"] { margin-left: 0 !important; }
+  [style*="font:var(--type-display)"], [style*="font: var(--type-display)"] { font-size: 40px !important; line-height: 1.05 !important; }
+  [style*="--type-h1)"] { font-size: 34px !important; line-height: 1.1 !important; }
+  [style*="white-space:nowrap"] { white-space: normal !important; }
+  [style*="max-width:19ch"], [style*="max-width:46ch"] { max-width: none !important; }
+  [style*="aspect-ratio"] { max-width: 100%; }
+  [style*="position:relative"][style*="overflow:hidden"][style*="height:100%"] { aspect-ratio: 4 / 3 !important; height: auto !important; }
+  main, section, footer { overflow-wrap: anywhere; }
+  img, iframe { max-width: 100%; }
+}
