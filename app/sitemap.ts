@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/aluminum-patio-covers", "/services/interior-remodeling",
     "/blog/how-much-does-a-new-roof-cost", "/blog/hail-damage-roof-insurance-claim",
     "/blog/flat-roof-replacement-cost", "/blog/deck-cost-per-square-foot",
-    "/blog/how-long-does-a-roof-last", "/blog/roof-leak-repair-cost", "/blog/architectural-shingles-vs-3-tab",
+    "/blog/how-long-does-a-roof-last", "/blog/roof-leak-repair-cost", "/blog/architectural-shingles-vs-3-tab", "/blog/trex-vs-timbertech",
   ];
   // Held routes (lib/publishing.ts) join the sitemap on their publish date.
   return pages.filter((path) => isLive(path || "/")).map((path) => ({

@@ -6,6 +6,7 @@
 export const SCHEDULE: Record<string, string> = {
   "/blog/roof-leak-repair-cost": "2026-10-26T11:00:00Z",
   "/blog/architectural-shingles-vs-3-tab": "2026-10-28T11:00:00Z",
+  "/blog/trex-vs-timbertech": "2026-10-30T11:00:00Z",
 };
 
 export const isLive = (route: string) => {

@@ -15,6 +15,7 @@ export const metadata = {
 
 // /blog-post adds entries here, newest first: { slug, title, hook, date }
 const ALL_POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
+  { slug: "trex-vs-timbertech", title: "Trex vs TimberTech", hook: "2026 board prices tier by tier, the warranty fine print, heat in a Southern summer, and where AZEK and Fiberon fit.", date: "30 October 2026" },
   { slug: "architectural-shingles-vs-3-tab", title: "Architectural shingles vs 3-tab", hook: "Cost per year of roof, wind warranties, why 3-tab is getting hard to match, and Owens Corning Duration against Oakridge.", date: "28 October 2026" },
   { slug: "roof-leak-repair-cost", title: "How much does roof leak repair cost?", hook: "Prices for every common leak, how to find one yourself, and what two Upstate homeowners paid for theirs.", date: "26 October 2026" },
   { slug: "how-long-does-a-roof-last", title: "How long does a roof last?", hook: "Lifespans for every roofing material, why Upstate heat and hail shorten them, and how to tell how old yours is.", date: "23 October 2026" },
@@ -29,6 +30,7 @@ const POSTS = ALL_POSTS.filter((p) => isLive(`/blog/${p.slug}`));
 
 // Card photo per post: the post's own hero image.
 const IMAGES: Record<string, { src: string; alt: string }> = {
+  "trex-vs-timbertech": { src: "/images/deck-low-gray-composite-navy-house-concrete-pad.webp", alt: "Low gray composite deck sitting close to the lawn with a wide step down to a new concrete pad behind a navy-sided home" },
   "architectural-shingles-vs-3-tab": { src: "/images/roof-replacement-brown-shingles-brick-colonial-teal-shutters.webp", alt: "Drone view of a two-story brick and siding home with a new brown architectural shingle roof, teal shutters and a crepe myrtle in bloom" },
   "roof-leak-repair-cost": { src: "/images/new-shingles-pipe-boot-close-up.webp", alt: "Close-up of a black rubber pipe boot sealed around a vent pipe on new gray architectural shingles" },
   "how-long-does-a-roof-last": { src: "/images/tear-off-exposed-osb-decking-crew-aerial.webp", alt: "Drone view of a crew tearing old shingles off an Upstate home, with bare wood decking showing on half the roof" },
