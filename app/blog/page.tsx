@@ -14,6 +14,7 @@ export const metadata = {
 
 // /blog-post adds entries here, newest first: { slug, title, hook, date }
 const POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
+  { slug: "how-long-does-a-roof-last", title: "How long does a roof last?", hook: "Lifespans for every roofing material, why Upstate heat and hail shorten them, and how to tell how old yours is.", date: "23 October 2026" },
   { slug: "how-much-does-a-new-roof-cost", title: "How much does a new roof cost?", hook: "What 19 Upstate homeowners actually paid, and what a roofing quote should list line by line.", date: "22 October 2026" },
   { slug: "hail-damage-roof-insurance-claim", title: "Hail damage roof insurance claim: how it works", hook: "The inspection, the adjuster visit, what gets paid, and the South Carolina rules worth knowing.", date: "22 October 2026" },
   { slug: "flat-roof-replacement-cost", title: "Flat roof replacement cost", hook: "What TPO, EPDM and modified bitumen cost per square foot, and the line items that move a quote.", date: "22 October 2026" },
@@ -22,6 +23,7 @@ const POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: st
 
 // Card photo per post: the post's own hero image.
 const IMAGES: Record<string, { src: string; alt: string }> = {
+  "how-long-does-a-roof-last": { src: "/images/tear-off-exposed-osb-decking-crew-aerial.webp", alt: "Drone view of a crew tearing old shingles off an Upstate home, with bare wood decking showing on half the roof" },
   "how-much-does-a-new-roof-cost": { src: "/images/roof-replacement-blue-gray-shingles-brick-two-story-aerial.webp", alt: "New blue-gray architectural shingle roof on a brick two-story home in the Upstate, seen from a drone" },
   "hail-damage-roof-insurance-claim": { src: "/images/inspection-chalk-circle-on-shingle.webp", alt: "A damage point circled in chalk on a shingle during a roof inspection" },
   "flat-roof-replacement-cost": { src: "/images/stock/flat-roof-modified-bitumen-rolls-weathered-seams.webp", alt: "Weathered modified bitumen flat roof with overlapping seams running across it" },

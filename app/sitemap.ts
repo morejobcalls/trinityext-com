@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/aluminum-patio-covers", "/services/interior-remodeling",
     "/blog/how-much-does-a-new-roof-cost", "/blog/hail-damage-roof-insurance-claim",
     "/blog/flat-roof-replacement-cost", "/blog/deck-cost-per-square-foot",
+    "/blog/how-long-does-a-roof-last",
   ];
   return pages.map((path) => ({
     url: `${site.url}${path}/`,
