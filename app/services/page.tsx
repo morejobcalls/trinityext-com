@@ -6,8 +6,8 @@ import { Site, PageHero, Section, Cards, CtaBand, JsonLd, business } from "@/com
 import { zones } from "@/lib/nav";
 
 export const metadata = {
-  title: { absolute: "Home Services in Greenville, SC: Roofs, Decks, Siding & Remodels | Trinity" },
-  description: "Every Trinity Exteriors service in one place: roofing and storm damage, siding, gutters, fascia and soffit, decks, patio covers, flooring and remodels across the Upstate.",
+  title: { absolute: "Home Services in Greenville, SC: Roofs, Decks & Remodels" },
+  description: "Every Trinity Exteriors service in one place: roofing, storm damage, siding, gutters, fascia, decks, patio covers, flooring and remodels across the Upstate.",
   alternates: { canonical: "/services/" },
 };
 

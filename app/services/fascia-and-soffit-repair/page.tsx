@@ -5,7 +5,7 @@ import { Site, PageHero, Band, Section, Photos, Cards, FeatureQuote, Faq, Areas,
 
 export const metadata = {
   title: { absolute: "Fascia Board Repair in Greenville, SC | Trinity Exteriors" },
-  description: "Rotted fascia boards and soffit repaired or replaced across Greenville and the Upstate. Free inspection, the cost before any work starts, and the roof edge checked too. 5.0 from 106 Google reviews.",
+  description: "Rotted fascia boards and soffit repaired or replaced across Greenville and the Upstate. Free inspection, a written price and the roof edge checked too.",
   alternates: { canonical: "/services/fascia-and-soffit-repair/" },
 };
 

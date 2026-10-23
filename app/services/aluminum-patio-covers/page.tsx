@@ -4,7 +4,7 @@ import { Site, PageHero, Band, Section, FeatureQuote, Photos, Ticks, Areas, Faq,
 
 export const metadata = {
   title: { absolute: "Aluminum Patio Covers in Greenville, SC | Trinity Exteriors" },
-  description: "Aluminum patio covers and screened enclosures over Upstate patios and decks. Free estimate. 5.0 from 106 Google reviews.",
+  description: "Aluminum patio covers and screened enclosures over patios and decks in Greenville and the Upstate. Free estimate, price in writing. 5.0 from 106 Google reviews.",
   alternates: { canonical: "/services/aluminum-patio-covers/" },
 };
 

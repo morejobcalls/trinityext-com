@@ -4,8 +4,8 @@
 import { Site, PageHero, Band, Section, FeatureQuote, Photos, Ticks, Areas, Faq, CtaForm, JsonLd, business } from "@/components/site";
 
 export const metadata = {
-  title: { absolute: "Storm Damage Roofing & Insurance Claims in Greenville, SC | Trinity Exteriors" },
-  description: "Hail or wind damaged your roof? Free storm damage inspection in Greenville and the Upstate, and someone there when your adjuster comes. 30 of our 106 Google reviews mention insurance help.",
+  title: { absolute: "Storm Damage Roofing in Greenville, SC | Trinity Exteriors" },
+  description: "Hail or wind damage? Free storm damage roof inspection in Greenville and the Upstate, and someone there when the adjuster comes. 30 reviews mention claim help.",
   alternates: { canonical: "/services/storm-damage-roofing/" },
 };
 

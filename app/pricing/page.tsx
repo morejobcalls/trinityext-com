@@ -3,7 +3,7 @@ import { Site, Section, Ticks, CtaForm, FeatureQuote } from "@/components/site";
 
 export const metadata = {
   title: { absolute: "How We Price a Job in Greenville, SC | Trinity Exteriors" },
-  description: "How Trinity Exteriors prices a roof, deck or exterior job: a free visit, then a written estimate with the full price before work starts. Insurance claims handled too.",
+  description: "How Trinity Exteriors prices a roof, deck or remodel: a free visit, then a written estimate with the full price before work starts. Insurance claims too.",
   alternates: { canonical: "/pricing/" },
 };
 

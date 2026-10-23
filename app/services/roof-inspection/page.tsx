@@ -4,7 +4,7 @@ import { Site, PageHero, Band, Section, FeatureQuote, Photos, Ticks, Areas, Faq,
 
 export const metadata = {
   title: { absolute: "Free Roof Inspection in Greenville, SC | Trinity Exteriors" },
-  description: "Free roof inspection in Greenville and the Upstate. We check the shingles, nails and storm damage, show you what we found and can be there for the adjuster. 5.0 from 106 Google reviews.",
+  description: "Free roof inspection in Greenville and the Upstate. We check the shingles, nails and storm damage, show you what we found and can be there for the adjuster.",
   alternates: { canonical: "/services/roof-inspection/" },
 };
 

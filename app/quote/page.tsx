@@ -3,7 +3,7 @@ import { Site, Rating, Ticks, LeadForm } from "@/components/site";
 
 export const metadata = {
   title: { absolute: "Get a Free Estimate in Greenville, SC | Trinity Exteriors" },
-  description: "Book a free visit and written estimate from Trinity Exteriors: roofing, storm damage claims, gutters, siding, decks, patio covers and remodels across the Upstate.",
+  description: "Book a free visit and written estimate from Trinity Exteriors: roofing, storm claims, gutters, siding, decks, patio covers and remodels across the Upstate.",
   alternates: { canonical: "/quote/" },
 };
 

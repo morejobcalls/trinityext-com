@@ -5,7 +5,7 @@ import { Site, PageHero, Band, Section, Cards, FeatureQuote, Faq, Areas, CtaForm
 
 export const metadata = {
   title: { absolute: "Seamless Gutters in Greenville, SC | Trinity Exteriors" },
-  description: "Seamless gutter installation and gutter repair across Greenville and the Upstate, on their own or with a roof job. Help with the insurance claim after a storm. 5.0 from 106 Google reviews.",
+  description: "Seamless gutter installation and gutter repair across Greenville and the Upstate, on their own or with a roof job. 5.0 from 106 Google reviews. Free estimate.",
   alternates: { canonical: "/services/seamless-gutters/" },
 };
 

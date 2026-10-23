@@ -4,7 +4,7 @@ import { Site, PageHero, Band, Section, FeatureQuote, Ticks, Areas, Faq, CtaForm
 
 export const metadata = {
   title: { absolute: "Commercial Roofing in Greenville, SC | Trinity Exteriors" },
-  description: "Commercial roof repair and replacement in Greenville and the Upstate, including flat and TPO roofs. Free roof inspection, and the cost explained before work starts. 5.0 from 106 Google reviews.",
+  description: "Commercial roof repair and replacement in Greenville and the Upstate, including flat and TPO roofs. Free roof inspection and the cost explained before work.",
   alternates: { canonical: "/services/commercial-roofing/" },
 };
 

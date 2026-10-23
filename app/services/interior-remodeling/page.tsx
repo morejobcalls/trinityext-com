@@ -4,8 +4,8 @@
 import { Site, PageHero, Band, Section, FeatureQuote, Ticks, Faq, CtaForm, JsonLd, business } from "@/components/site";
 
 export const metadata = {
-  title: { absolute: "Interior Remodeling & Flooring in Greenville, SC | Trinity Exteriors" },
-  description: "Flooring, remodels, painting and repairs after water damage from the same Greenville crew that does your roof and deck. Free estimate, price in writing. 5.0 from 106 Google reviews.",
+  title: { absolute: "Interior Remodeling & Flooring in Greenville, SC | Trinity" },
+  description: "Flooring, remodels, painting and water damage repairs from the same Greenville crew that does your roof and deck. Free estimate, price in writing before work.",
   alternates: { canonical: "/services/interior-remodeling/" },
 };
 

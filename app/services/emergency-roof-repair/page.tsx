@@ -4,8 +4,8 @@ import type { ReactNode } from "react";
 import { Site, PageHero, Band, Section, Photos, Cards, FeatureQuote, Faq, Areas, CtaForm, JsonLd, business } from "@/components/site";
 
 export const metadata = {
-  title: { absolute: "Emergency Roofing & Roof Leak Repair in Greenville, SC | Trinity Exteriors" },
-  description: "Roof leaking in Greenville or the Upstate? Call (864) 844-7777. We find where the water gets in and fix it, with tarps and insurance claim help after storm damage. 5.0 from 106 Google reviews.",
+  title: { absolute: "Emergency Roof Repair in Greenville, SC | Trinity Exteriors" },
+  description: "Roof leaking in Greenville or the Upstate? Call (864) 844-7777. We find where the water gets in and fix it, with tarps and insurance claim help after a storm.",
   alternates: { canonical: "/services/emergency-roof-repair/" },
 };
 

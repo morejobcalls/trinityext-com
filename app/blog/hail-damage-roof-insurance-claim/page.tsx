@@ -2,7 +2,7 @@
 // unchanged from the /blog-post build; only the markup moved to components/site.
 import { Site, ArticleShell, CtaForm, JsonLd, business } from "@/components/site";
 
-export const metadata = {"title": {"absolute": "Hail Damage Roof Insurance Claim in SC: Step by Step | Trinity"}, "description": "How a hail damage roof insurance claim works in South Carolina: filing steps, the adjuster's test square, actual cash value vs replacement cost, denials and H.4817.", "alternates": {"canonical": "/blog/hail-damage-roof-insurance-claim/"}};
+export const metadata = {"title": {"absolute": "Hail Damage Roof Insurance Claim in SC: Step by Step"}, "description": "How a hail damage roof insurance claim works in South Carolina: filing, the adjuster's test square, actual cash value vs replacement cost, denials and H.4817.", "alternates": {"canonical": "/blog/hail-damage-roof-insurance-claim/"}};
 
 const graph = [{"@type": "Article", "headline": "Hail Damage Roof Insurance Claim: How It Works in South Carolina", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "mainEntityOfPage": "https://trinityext.com/blog/hail-damage-roof-insurance-claim/", "image": "https://trinityext.com/images/inspection-chalk-circle-on-shingle.webp", "author": {"@id": "https://trinityext.com/#business"}, "publisher": {"@id": "https://trinityext.com/#business"}}];
 

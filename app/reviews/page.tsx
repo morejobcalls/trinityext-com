@@ -4,7 +4,7 @@ import { Site, Section, Rating, HeroArt, Reviews, CtaForm, JsonLd, business } fr
 
 export const metadata = {
   title: { absolute: "Trinity Exteriors Reviews | 5.0 From 106 Google Reviews" },
-  description: "Read what Upstate homeowners say about Trinity Exteriors: insurance claims approved, roofs replaced in a day, decks they love, fair prices. 5.0 from 106 Google reviews.",
+  description: "What Upstate homeowners say about Trinity Exteriors: insurance claims approved, roofs replaced in a day, decks they love, fair prices. 5.0 from 106 reviews.",
   alternates: { canonical: "/reviews/" },
 };
 

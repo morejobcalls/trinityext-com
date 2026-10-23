@@ -28,7 +28,7 @@ html { --font-fraunces: Georgia; --font-instrument: system-ui; }
 }
 
 .t-site { background: var(--t-cream); color: var(--t-body); font: 400 17px/1.6 var(--t-sans); -webkit-font-smoothing: antialiased; }
-.t-site img { display: block; max-width: 100%; }
+.t-site img { display: block; max-width: 100%; height: auto; }
 .t-site a { color: inherit; }
 .t-wrap { max-width: var(--t-wrap); margin: 0 auto; padding: 0 var(--t-gut); }
 .t-site h1, .t-site h2, .t-site h3 { font-family: var(--t-serif); color: var(--t-ink); font-weight: 500; letter-spacing: -0.01em; line-height: 1.08; margin: 0; }
@@ -247,7 +247,7 @@ html { --font-fraunces: Georgia; --font-instrument: system-ui; }
 .t-footer a { text-decoration: none; color: #DDE6F0; }
 .t-footer a:hover { color: var(--t-sky); }
 .t-foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; }
-.t-foot-grid h4 { font: 600 12px/1 var(--t-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--t-sky); margin: 0 0 16px; }
+.t-foot-grid h3 { font: 600 12px/1 var(--t-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--t-sky); margin: 0 0 16px; }
 .t-foot-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .t-foot-brand img { height: 46px; width: auto; margin-bottom: 18px; }
 .t-foot-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .12); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; }

@@ -3,7 +3,7 @@ import { Site, PageHero, Band, Section, Cards, FeatureQuote, Photos, Areas, CtaF
 
 export const metadata = {
   title: { absolute: "About Trinity Exteriors | Greenville, SC Home Contractor" },
-  description: "Trinity Exteriors is owned by Billy and Erica Stewart and works across seven Upstate counties: roofs and storm claims, siding, gutters, decks, patio covers and work inside the house.",
+  description: "Owned by Billy and Erica Stewart, Trinity Exteriors works across seven Upstate counties: roofs, storm claims, siding, gutters, decks and work inside the house.",
   alternates: { canonical: "/about/" },
 };
 

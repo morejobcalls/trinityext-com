@@ -7,7 +7,7 @@ import { Site, PageHero, Band, Section, Cards, FeatureQuote, Faq, Areas, CtaForm
 
 export const metadata = {
   title: { absolute: "Siding Contractor in Greenville, SC | Trinity Exteriors" },
-  description: "Siding installation and replacement across Greenville and the Upstate. Free estimates, storm-damaged siding inspected, and roof, gutters and siding from one company. 5.0 from 106 Google reviews.",
+  description: "Siding installation and replacement across Greenville and the Upstate. Free estimates, storm-damaged siding inspected, roof, gutters and siding from one crew.",
   alternates: { canonical: "/services/siding-installation/" },
 };
 

@@ -4,7 +4,7 @@ import { Site, PageHero, Band, Section, FeatureQuote, Photos, Ticks, Areas, Faq,
 
 export const metadata = {
   title: { absolute: "Roofing Contractor in Greenville, SC | Trinity Exteriors" },
-  description: "Roof replacement and roof repair across Greenville and the Upstate. Free roof inspection, Owens Corning shingles and help with storm insurance claims. 5.0 from 106 Google reviews.",
+  description: "Roof replacement and repair across Greenville and the Upstate. Free roof inspection, Owens Corning shingles and help with storm claims. 5.0 from 106 reviews.",
   alternates: { canonical: "/services/roofing/" },
 };
 

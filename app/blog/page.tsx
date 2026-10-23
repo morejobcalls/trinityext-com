@@ -7,8 +7,8 @@
 import { Site, Section, CtaBand } from "@/components/site";
 
 export const metadata = {
-  title: { absolute: "Roofing and Deck Advice for Upstate Homeowners | Trinity Exteriors" },
-  description: "Roof costs, storm damage insurance claims, flat roofs and deck prices, explained by the Trinity Exteriors team in Greenville, SC.",
+  title: { absolute: "Roof and Deck Advice for Upstate SC Homeowners | Trinity" },
+  description: "Roof costs, storm damage insurance claims, flat roofs and deck prices, explained in plain words by the Trinity Exteriors team in Greenville, SC.",
   alternates: { canonical: "/blog/" },
 };
 

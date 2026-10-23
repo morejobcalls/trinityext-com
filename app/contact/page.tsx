@@ -3,7 +3,7 @@ import { Site, Section, Rating, Ticks, Cards, LeadForm, JsonLd, business, Photos
 
 export const metadata = {
   title: { absolute: "Contact Trinity Exteriors | Free Estimates in Greenville, SC" },
-  description: "Call (864) 844-7777 or send the form for a free estimate on your roof, deck, siding, gutters or remodel in Greenville and the Upstate. Open Monday to Friday, 8am to 6pm.",
+  description: "Call (864) 844-7777 or send the form for a free estimate on your roof, deck, siding, gutters or remodel in Greenville and the Upstate. Open Mon-Fri, 8am-6pm.",
   alternates: { canonical: "/contact/" },
 };
 

@@ -50,13 +50,13 @@ export function SiteFooter() {
       <div className="t-wrap">
         <div className="t-foot-grid">
           <div className="t-foot-brand">
-            <img src="/logo-white.png" alt="Trinity Exteriors" width={143} height={46} />
+            <img src="/logo-white.png" alt="Trinity Exteriors" width={143} height={46} loading="lazy" />
             <p>The contractor Upstate homeowners trust with the whole house. Great work at a fair price.</p>
             <p style={{ marginTop: 14 }}><a href={TEL}>{site.phone}</a><br />{site.address}<br />Mon–Fri 8am–6pm · Sat–Sun closed</p>
           </div>
           {zones.map((z) => (
             <div key={z.id}>
-              <h4>{z.tag}</h4>
+              <h3>{z.tag}</h3>
               <ul>{z.services.map((s) => <li key={s.href}><a href={s.href}>{s.name}</a></li>)}</ul>
             </div>
           ))}
@@ -80,7 +80,7 @@ export function HeroArt({ main, second, note }: { main: Img; second?: Img; note?
   return (
     <div className="t-hero-art">
       <div className={`t-ph ${second ? "t-ph-a" : "t-ph-solo"}`}><img src={main.src} alt={main.alt} fetchPriority="high" /></div>
-      {second && <div className="t-ph t-ph-b"><img src={second.src} alt={second.alt} /></div>}
+      {second && <div className="t-ph t-ph-b"><img src={second.src} alt={second.alt} loading="lazy" /></div>}
       {note && <div className="t-note"><q>{note.quote}</q><span>{note.cite}</span></div>}
     </div>
   );

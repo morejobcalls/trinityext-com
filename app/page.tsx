@@ -3,8 +3,8 @@
 import { Site, HeroArt, Rating, Band, Section, ZoneCards, FeatureQuote, Steps, Reviews, CtaForm, JsonLd, business } from "@/components/site";
 
 export const metadata = {
-  title: { absolute: "Home Contractor in Greenville, SC | Roofs, Decks & Remodels | Trinity Exteriors" },
-  description: "One local contractor for the whole house: roofing, storm damage, siding, gutters, decks, patio covers, flooring and remodels across Greenville and the Upstate. 5.0 from 106 Google reviews.",
+  title: { absolute: "Home Contractor in Greenville, SC: Roofs, Decks, Remodels" },
+  description: "Greenville home contractor for the whole house: roofs, siding, gutters, decks, floors and remodels. 5.0 from 106 Google reviews. Free written estimates.",
   alternates: { canonical: "/" },
 };
 
