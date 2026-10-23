@@ -15,6 +15,7 @@ export const metadata = {
 
 // /blog-post adds entries here, newest first: { slug, title, hook, date }
 const ALL_POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
+  { slug: "roof-inspection-cost", title: "How much does a roof inspection cost?", hook: "Walk-on, drone and infrared prices, what a home inspector skips, and when a roof inspection is free.", date: "4 November 2026" },
   { slug: "water-damage-on-ceiling", title: "Water damage on the ceiling: what it means and what to do", hook: "How to read a ceiling stain, find where the water comes from, what the repair costs, and when insurance pays.", date: "2 November 2026" },
   { slug: "trex-vs-timbertech", title: "Trex vs TimberTech", hook: "2026 board prices tier by tier, the warranty fine print, heat in a Southern summer, and where AZEK and Fiberon fit.", date: "30 October 2026" },
   { slug: "architectural-shingles-vs-3-tab", title: "Architectural shingles vs 3-tab", hook: "Cost per year of roof, wind warranties, why 3-tab is getting hard to match, and Owens Corning Duration against Oakridge.", date: "28 October 2026" },
@@ -31,6 +32,7 @@ const POSTS = ALL_POSTS.filter((p) => isLive(`/blog/${p.slug}`));
 
 // Card photo per post: the post's own hero image.
 const IMAGES: Record<string, { src: string; alt: string }> = {
+  "roof-inspection-cost": { src: "/images/roof-replacement-charcoal-shingles-tan-craftsman-home.webp", alt: "Drone view of a tan craftsman-style home with a charcoal shingle roof, stone porch columns and a two-car garage in an Upstate subdivision" },
   "water-damage-on-ceiling": { src: "/images/stock/ceiling-drywall-peeling-paint-water-damage.webp", alt: "Paint peeling off a white drywall ceiling in wide flakes, with brown water stains showing underneath" },
   "trex-vs-timbertech": { src: "/images/deck-low-gray-composite-navy-house-concrete-pad.webp", alt: "Low gray composite deck sitting close to the lawn with a wide step down to a new concrete pad behind a navy-sided home" },
   "architectural-shingles-vs-3-tab": { src: "/images/roof-replacement-brown-shingles-brick-colonial-teal-shutters.webp", alt: "Drone view of a two-story brick and siding home with a new brown architectural shingle roof, teal shutters and a crepe myrtle in bloom" },
