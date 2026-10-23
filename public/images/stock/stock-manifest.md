@@ -15,3 +15,4 @@
 | flat-roof-parapet-edge-scupper-drain.webp | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Flat_roof_roofing.JPG | Public domain | /blog/flat-roof-replacement-cost | stock, not a Trinity job |
 | low-pitch-standing-seam-metal-roof-ranch-aerial.webp | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Standing_seam_metal_roof_low_pitch_roof-3.jpg | CC0 | /blog/flat-roof-replacement-cost | stock, not a Trinity job |
 | roofing-membrane-roll-peeled-backing.webp | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:EPDM_foil.jpg | Public domain | /blog/flat-roof-replacement-cost | stock, not a Trinity job |
+| worn-3-tab-shingles-along-eave.webp | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Faster_wear_of_asphalt_shingles_along_eaves.JPG | CC BY-SA 3.0, Dale Mahalko (credit shown in the caption) | /blog/architectural-shingles-vs-3-tab | stock, not a Trinity job |

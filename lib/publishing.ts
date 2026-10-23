@@ -5,6 +5,7 @@
 // route with <ScheduledLink>, never a raw <a> (code/check_scheduled_links.py).
 export const SCHEDULE: Record<string, string> = {
   "/blog/roof-leak-repair-cost": "2026-10-26T11:00:00Z",
+  "/blog/architectural-shingles-vs-3-tab": "2026-10-28T11:00:00Z",
 };
 
 export const isLive = (route: string) => {
