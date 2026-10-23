@@ -4,6 +4,7 @@
 // scheduled run of .github/workflows/deploy.yml is what releases it. Link to a held
 // route with <ScheduledLink>, never a raw <a> (code/check_scheduled_links.py).
 export const SCHEDULE: Record<string, string> = {
+  "/blog/roof-leak-repair-cost": "2026-10-26T11:00:00Z",
 };
 
 export const isLive = (route: string) => {

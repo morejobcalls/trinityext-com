@@ -1,7 +1,7 @@
 // Blog post, /blog-post build 23 October 2026 (keyword-map row 26). Duplicated from
 // how-much-does-a-new-roof-cost; only words, images, metadata and schema changed.
 // Sources: research/blog-how-long-does-a-roof-last/dossier.md
-import { Site, ArticleShell, CtaForm, JsonLd, business } from "@/components/site";
+import { Site, ArticleShell, CtaForm, JsonLd, ScheduledLink, business } from "@/components/site";
 
 export const metadata = {"title": {"absolute": "How Long Does a Roof Last? Lifespans by Material (2026)"}, "description": "How long does a roof last? Asphalt shingles get 20 to 30 years, metal 40 to 80, tile 100+. See all materials, why Upstate heat ages roofs and how to date yours.", "alternates": {"canonical": "/blog/how-long-does-a-roof-last/"}, "openGraph": {"title": "How Long Does a Roof Last? Every Material, Plus Upstate SC", "description": "Roof lifespans by material, why Upstate heat and hail shorten them, and how to tell how old your roof really is.", "url": "/blog/how-long-does-a-roof-last", "type": "article", "images": ["/images/tear-off-exposed-osb-decking-crew-aerial.webp"]}};
 
@@ -91,7 +91,7 @@ export default function Page() {
         <p>And the black streaks? They're mostly an algae called Gloeocapsa magma, which loves warm, humid places like ours. The <a href="https://www.asphaltroofing.org/algae-discoloration/" {...X}>asphalt roofing trade group</a> calls it staining, not damage, and says in capital letters: "DO NOT use a power washer."</p>
 
         <h2 id="early">What makes a roof fail early?</h2>
-        <p>Roofs that die young usually have help. Besides storms, the usual culprits are a poorly vented attic, overhanging trees and small leaks left alone, and none of them is on the chart.</p>
+        <p>Roofs that die young usually have help. Besides storms, the usual culprits are a poorly vented attic, overhanging trees and <ScheduledLink href="/blog/roof-leak-repair-cost/">small leaks left alone</ScheduledLink>, and none of them is on the chart.</p>
         <ol>
         <li><strong>A hot, stuffy attic.</strong> The <a href="https://www.asphaltroofing.org/ventilation/" {...X}>Asphalt Roofing Manufacturers Association</a> says "improper ventilation can lead to premature deterioration of your shingles and roof deck," and Owens Corning's warranty excludes that damage. Your attic is meant to breathe, and plenty of them are holding their breath like a kid driving past a cemetery.</li>
           <li><strong>Trees.</strong> The same warranty excludes "debris, resins, or drippings from foliage" and branches falling on the roof. That big oak over the garage is gorgeous and, according to the paperwork, entirely on its own.</li>
