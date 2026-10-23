@@ -5,6 +5,7 @@
 // link, one-sentence hook, date. Posts live FLAT at /blog/[slug].
 // Redesign port 22 October 2026: cards use components/site + app/brand.css.
 import { Site, Section, CtaBand } from "@/components/site";
+import { isLive } from "@/lib/publishing";
 
 export const metadata = {
   title: { absolute: "Roof and Deck Advice for Upstate SC Homeowners | Trinity" },
@@ -13,13 +14,16 @@ export const metadata = {
 };
 
 // /blog-post adds entries here, newest first: { slug, title, hook, date }
-const POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
+const ALL_POSTS: ReadonlyArray<{ slug: string; title: string; hook: string; date: string }> = [
   { slug: "how-long-does-a-roof-last", title: "How long does a roof last?", hook: "Lifespans for every roofing material, why Upstate heat and hail shorten them, and how to tell how old yours is.", date: "23 October 2026" },
   { slug: "how-much-does-a-new-roof-cost", title: "How much does a new roof cost?", hook: "What 19 Upstate homeowners actually paid, and what a roofing quote should list line by line.", date: "22 October 2026" },
   { slug: "hail-damage-roof-insurance-claim", title: "Hail damage roof insurance claim: how it works", hook: "The inspection, the adjuster visit, what gets paid, and the South Carolina rules worth knowing.", date: "22 October 2026" },
   { slug: "flat-roof-replacement-cost", title: "Flat roof replacement cost", hook: "What TPO, EPDM and modified bitumen cost per square foot, and the line items that move a quote.", date: "22 October 2026" },
   { slug: "deck-cost-per-square-foot", title: "Deck cost per square foot", hook: "A 16x16 deck priced out, wood against composite over ten years, and what three Upstate homeowners paid.", date: "22 October 2026" },
 ];
+
+// Held posts (lib/publishing.ts) stay off the index until their date.
+const POSTS = ALL_POSTS.filter((p) => isLive(`/blog/${p.slug}`));
 
 // Card photo per post: the post's own hero image.
 const IMAGES: Record<string, { src: string; alt: string }> = {

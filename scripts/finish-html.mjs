@@ -5,7 +5,7 @@
 // 2. Image sizes. Every <img> without width/height gets the file's real pixel size,
 //    so the browser reserves the space and nothing shifts on load (CLS).
 // Added 23 October 2026 by /seo-optimization.
-import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, statSync, existsSync, rmSync } from "node:fs";
 import { join } from "node:path";
 
 const OUT = join(process.cwd(), "out");
@@ -40,6 +40,16 @@ function pages(dir) {
     const p = join(dir, f);
     return statSync(p).isDirectory() ? pages(p) : f.endsWith(".html") ? [p] : [];
   });
+}
+
+// 0. Held routes. Anything in lib/publishing.ts whose date has not come is removed
+//    from out/, so GitHub Pages answers a real 404 until the scheduled deploy.
+const sched = readFileSync(join(process.cwd(), "lib", "publishing.ts"), "utf8");
+for (const [, route, at] of sched.matchAll(/"(\/[a-z0-9/-]+)":\s*"([0-9T:Z.+-]+)"/g)) {
+  if (Date.now() < Date.parse(at)) {
+    rmSync(join(OUT, route), { recursive: true, force: true });
+    console.log(`finish-html: held ${route} until ${at}`);
+  }
 }
 
 let tagged = 0, sized = 0, srcsets = 0, missing = new Set();

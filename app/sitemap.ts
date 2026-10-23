@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site.config";
+import { isLive } from "@/lib/publishing";
 
 export const dynamic = "force-static"; // required for static export (SSG)
 
@@ -17,7 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/flat-roof-replacement-cost", "/blog/deck-cost-per-square-foot",
     "/blog/how-long-does-a-roof-last",
   ];
-  return pages.map((path) => ({
+  // Held routes (lib/publishing.ts) join the sitemap on their publish date.
+  return pages.filter((path) => isLive(path || "/")).map((path) => ({
     url: `${site.url}${path}/`,
     lastModified: new Date(),
     priority: path === "" ? 1 : 0.8,

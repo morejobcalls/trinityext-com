@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { site } from "@/lib/site.config";
 import { mainNav, zones } from "@/lib/nav";
+import { isLive } from "@/lib/publishing";
 
 const TEL = "tel:+18648447777";
 
@@ -348,4 +349,10 @@ export function ArticleShell({ crumbs, eyebrow, title, updated, readMins, hero, 
       </div>
     </div>
   );
+}
+
+// A link to a route that may still be held (lib/publishing.ts). Plain text until
+// the route's date, then a normal link, so a live page never points at a 404.
+export function ScheduledLink({ href, children }: { href: string; children: ReactNode }) {
+  return isLive(href) ? <a href={href}>{children}</a> : <>{children}</>;
 }
