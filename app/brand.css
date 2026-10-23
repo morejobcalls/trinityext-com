@@ -215,6 +215,7 @@ html { --font-fraunces: Georgia; --font-instrument: system-ui; }
 .t-prose .t-quick strong { display: block; font: 600 13px/1 var(--t-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--t-navy); margin-bottom: 10px; }
 .t-table-wrap { overflow-x: auto; border: 1px solid var(--t-line); border-radius: 14px; background: var(--t-paper); }
 .t-prose table { width: 100%; border-collapse: collapse; font-size: 16px; }
+.t-prose table, .t-prose th, .t-prose td { overflow-wrap: normal; } /* globals.css "anywhere" split table words mid-word on phones */
 .t-prose th, .t-prose td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--t-line); vertical-align: top; }
 .t-prose thead th { background: var(--t-sand); color: var(--t-ink); font-weight: 600; }
 .t-prose tr:last-child td { border-bottom: 0; }
