@@ -51,7 +51,7 @@ export function SiteFooter() {
       <div className="t-wrap">
         <div className="t-foot-grid">
           <div className="t-foot-brand">
-            <img src="/logo-white.png" alt="Trinity Exteriors" width={143} height={46} loading="lazy" />
+            <picture><source srcSet="/logo-dark.webp" type="image/webp" /><img src="/logo-dark.png" alt="Trinity Exteriors" width={143} height={46} loading="lazy" /></picture>
             <p>The contractor Upstate homeowners trust with the whole house. Great work at a fair price.</p>
             <p style={{ marginTop: 14 }}><a href={TEL}>{site.phone}</a><br />{site.address}<br />Mon–Fri 8am–6pm · Sat–Sun closed</p>
           </div>
