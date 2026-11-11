@@ -11,7 +11,7 @@ export const zones: Zone[] = [
     title: "Roof & exterior",
     blurb: "New roofs and repairs, storm damage and insurance help, siding, gutters and the trim that holds it all together.",
     img: "/images/roof-replacement-blue-gray-shingles-brick-two-story-aerial.webp",
-    alt: "New blue-gray roof on a brick two-storey home",
+    alt: "New blue-gray roof on a brick two-story home",
     services: [
       { name: "Roofing", href: "/services/roofing/" },
       { name: "Storm damage", href: "/services/storm-damage-roofing/" },

@@ -69,7 +69,7 @@ export default function Page() {
 
       <Section eyebrow="Our work" title="Covers and screened porches we've built">
         <Photos items={[
-          { src: "/images/screened-porch-second-storey-gable.webp", alt: "Second-storey screened porch with a gable roof and a ceiling fan above a long deck staircase" },
+          { src: "/images/screened-porch-second-storey-gable.webp", alt: "Second-story screened porch with a gable roof and a ceiling fan above a long deck staircase" },
           { src: "/images/deck-cost-hero-raised-wood-deck-aluminum-cover.webp", alt: "Raised wood deck under an aluminum patio cover" },
           { src: "/images/deck-two-story-screened-porch-stairs.webp", alt: "Two-story stained deck with a screened porch on top and a long staircase" },
         ]} />

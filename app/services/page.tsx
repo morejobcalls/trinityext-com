@@ -26,7 +26,7 @@ const blurbs: Record<string, string> = {
 };
 
 const zoneImg: Record<string, { src: string; alt: string }> = {
-  outside: { src: "/images/roof-replacement-blue-gray-shingles-brick-two-story-aerial.webp", alt: "New blue-gray roof on a brick two-storey home" },
+  outside: { src: "/images/roof-replacement-blue-gray-shingles-brick-two-story-aerial.webp", alt: "New blue-gray roof on a brick two-story home" },
   "out-back": { src: "/images/deck-brown-composite-brick-house-black-balusters.webp", alt: "Brown composite deck with black balusters" },
   inside: { src: "/images/interior-water-damage-drying-fans-kitchen.webp", alt: "Drying fans set up on a kitchen floor after a leak" },
 };
@@ -46,7 +46,7 @@ export default function Page() {
         eyebrow="What we do"
         title="Home services for the whole house, from one contractor"
         lead={<p>Roofs and storm damage, siding and gutters, decks and patio covers, and the inside of the house too. One local crew, a fair price in writing before anything starts, and a free estimate on every job.</p>}
-        main={{ src: "/images/deck-two-story-screened-porch-stairs.webp", alt: "Two-storey screened porch and stairs built by Trinity" }}
+        main={{ src: "/images/deck-two-story-screened-porch-stairs.webp", alt: "Two-story screened porch and stairs built by Trinity" }}
         second={{ src: "/images/roof-replacement-charcoal-shingles-tan-craftsman-home.webp", alt: "New charcoal roof on a craftsman home" }}
         note={{ quote: "They replaced an old wooden deck with Trex composite and I couldn't be happier with the results.", cite: "Michael L., Google review" }}
       />

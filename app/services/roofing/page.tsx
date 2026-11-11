@@ -19,7 +19,7 @@ const faqs = [
   },
   { q: "How long does a roof replacement take?", t: "It depends on the size and pitch of the roof, and you'll get a timeline at the inspection. Six of our Google reviewers say the whole roof went on in one day. “The entire roof was replaced in just 1 day!” (Tammy D.)" },
   { q: "How much does a new roof cost in Greenville?", t: "It depends on the roof's size and pitch, how many layers come off, and how much decking needs replacing. You get the number after the free inspection. “They were up front about the process and costs and held true to that throughout the new roof project.” (Andy A.)" },
-  { q: "What shingles do you install?", t: "Our recent roofs use Owens Corning shingles, mostly the Duration line in colours like Driftwood, Williamsburg Gray, Onyx Black and Brownwood. Ice and water barrier goes on at the eaves, valleys and penetrations as standard." },
+  { q: "What shingles do you install?", t: "Our recent roofs use Owens Corning shingles, mostly the Duration line in colors like Driftwood, Williamsburg Gray, Onyx Black and Brownwood. Ice and water barrier goes on at the eaves, valleys and penetrations as standard." },
   { q: "Do you clean up after the job?", t: "Our customers say so. Eight Google reviews mention the cleanup or the nail sweep. “They left the area so that you would never know that anything was done except for the look of the roof.” (Scott D.)" },
   {
     q: "Do you repair roofs, or only replace them?",

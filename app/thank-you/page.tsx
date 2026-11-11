@@ -34,7 +34,7 @@ export default function Page() {
     <Site>
       <section className="t-section t-navy t-on-navy" style={{ textAlign: "center" }}>
         <div className="t-wrap" style={{ display: "grid", justifyItems: "center", gap: 20 }}>
-          <span className="t-eyebrow">Enquiry received</span>
+          <span className="t-eyebrow">Inquiry received</span>
           <h1 style={{ color: "#fff", fontSize: "clamp(40px, 5vw, 64px)" }}>Got it - thanks.</h1>
           <p className="t-lead" style={{ maxWidth: 560 }}>A real person replies <strong style={{ color: "#fff" }}>within one business day</strong>. Nothing else is needed from you right now.</p>
           <a className="t-btn t-btn-light" href={`tel:${tel}`}>Rather not wait? Call {site.phone}</a>

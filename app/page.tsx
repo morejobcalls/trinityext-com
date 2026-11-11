@@ -35,7 +35,7 @@ export default function Page() {
             <Rating />
           </div>
           <HeroArt
-            main={{ src: "/images/deck-two-story-screened-porch-stairs.webp", alt: "Two-storey screened porch and stairs built by Trinity" }}
+            main={{ src: "/images/deck-two-story-screened-porch-stairs.webp", alt: "Two-story screened porch and stairs built by Trinity" }}
             second={{ src: "/images/roof-replacement-charcoal-shingles-tan-craftsman-home.webp", alt: "New charcoal roof on a craftsman home" }}
             note={{ quote: "No high pressure sales. No hidden costs. Just a quality job at a fair price.", cite: "Gene S., Google review" }}
           />
@@ -70,7 +70,7 @@ export default function Page() {
         ]} />
       </Section>
 
-      <Section eyebrow="106 Google reviews · 5.0" title="Neighbours say it better.">
+      <Section eyebrow="106 Google reviews · 5.0" title="Neighbors say it better.">
         <Reviews items={reviews} />
         <p style={{ marginTop: 8 }}><a className="t-btn t-btn-ghost" href="/reviews/">Read more reviews</a></p>
       </Section>

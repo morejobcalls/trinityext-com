@@ -83,7 +83,7 @@ export default function Page() {
             { title: "One company", text: "Roof, gutters and siding handled by one company." },
             { title: "A local office", text: "An office on Rutherford Road in Greenville." },
           ]} />
-          <Pic src="/images/stock/siding-vinyl-row-houses-tan-and-white.webp" alt="Tan and white vinyl siding on two neighbouring houses" />
+          <Pic src="/images/stock/siding-vinyl-row-houses-tan-and-white.webp" alt="Tan and white vinyl siding on two neighboring houses" />
         </div>
       </Section>
 
@@ -101,7 +101,7 @@ export default function Page() {
       </Section>
 
       <div style={{ paddingTop: 104 }} />
-      <CtaForm title="Ready when you are" text="Book a free siding estimate, or call and we'll set a time. The neighbours will notice before you do." project="Siding, gutters or trim" />
+      <CtaForm title="Ready when you are" text="Book a free siding estimate, or call and we'll set a time. The neighbors will notice before you do." project="Siding, gutters or trim" />
     </Site>
   );
 }

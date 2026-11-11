@@ -27,14 +27,14 @@ export default function Page() {
             <p className="t-lead">Inspections and estimates are free. Call during business hours, or send the form any time and we will call you back.</p>
             <div className="t-hero-ctas">
               <a className="t-btn t-btn-primary" href="tel:+18648447777">Call (864) 844-7777</a>
-              <a className="t-btn t-btn-ghost" href="#enquiry">Send the form instead</a>
+              <a className="t-btn t-btn-ghost" href="#inquiry">Send the form instead</a>
             </div>
             <Rating />
             <div style={{ marginTop: 22 }}><Ticks items={["Free inspections", "Free estimates", "Insurance claim help"]} /></div>
           </div>
-          <div id="enquiry" style={{ borderRadius: 24, overflow: "hidden", border: "1px solid var(--t-line)", boxShadow: "0 30px 60px -30px rgba(11, 35, 64, .35)" }}>
+          <div id="inquiry" style={{ borderRadius: 24, overflow: "hidden", border: "1px solid var(--t-line)", boxShadow: "0 30px 60px -30px rgba(11, 35, 64, .35)" }}>
             <div style={{ background: "var(--t-navy)", color: "#fff", padding: "22px 44px" }}>
-              <span className="t-eyebrow" style={{ color: "var(--t-sky)" }}>Send an enquiry</span>
+              <span className="t-eyebrow" style={{ color: "var(--t-sky)" }}>Send an inquiry</span>
               <h2 style={{ color: "#fff", fontSize: 26, marginTop: 8 }}>Five fields and we will call you back</h2>
             </div>
             <LeadForm email />

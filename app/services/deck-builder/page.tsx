@@ -61,7 +61,7 @@ export default function Page() {
           eyebrow="Composite deck replacement · September 2026"
           quote="I am so incredibly pleased with the final product! Spending time on my deck now is enjoyable instead of being afraid of falling through a rotten board."
           cite="via Google"
-          img={{ src: "/images/deck-elevated-pressure-treated-aluminum-cover.webp", alt: "Second-storey deck with black balusters and an aluminum roof cover over part of it" }}
+          img={{ src: "/images/deck-elevated-pressure-treated-aluminum-cover.webp", alt: "Second-story deck with black balusters and an aluminum roof cover over part of it" }}
         />
       </Section>
 
