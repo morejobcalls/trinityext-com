@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { site } from "@/lib/site.config";
+import { LEAD_PREFILL_KEY } from "@/components/thank-you/BookingFrame";
 
 // GitHub Pages serves static files only, so there is no /api/lead route.
 // Every form still says action="/api/lead"; this catches those submits and posts
@@ -45,7 +46,21 @@ export default function LeadFormHandler() {
           }),
         });
         if (!res.ok) throw new Error(`Webhook responded ${res.status}`);
-        window.location.href = "/thank-you/";
+        // Roof leads go straight to the inspection calendar, prefilled from sessionStorage
+        // (never the URL, so names and numbers stay out of analytics and logs).
+        if (String(payload.service ?? "").startsWith("Roof")) {
+          try {
+            sessionStorage.setItem(LEAD_PREFILL_KEY, JSON.stringify({
+              first_name: name.split(/\s+/)[0] ?? "",
+              last_name: name.split(/\s+/).slice(1).join(" "),
+              email: String(payload.email ?? "").trim(),
+              phone: String(payload.phone ?? "").trim(),
+            }));
+          } catch { /* storage blocked: the calendar still works, just not prefilled */ }
+          window.location.href = "/thank-you/?roof=1";
+        } else {
+          window.location.href = "/thank-you/";
+        }
       } catch {
         if (button) button.disabled = false;
         note.textContent = `Sorry, that didn't send. Please try again or call ${site.phone}.`;
